@@ -1,0 +1,77 @@
+/* Global layout */
+.layout {
+  min-height: 100vh;
+  background-color: #FFF9EB; /* soft cream */
+  font-family: "Poppins", "Baloo 2", sans-serif; /* bubbly bold fonts */
+}
+
+/* Header */
+.header {
+  background-color: #FFCC00; /* warm food-friendly yellow */
+  border-bottom: 3px solid #E7B400;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 34px;
+  font-weight: 800;
+  color: #D82020; /* warm appetizing red */
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  padding: 10px 22px;
+  background-color: #FFFFFF;
+  color: #333333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid #FFD94D; /* subtle warm border */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  background-color: #FFEB80;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+.nav-link.active {
+  background-color: #FFEB80;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* Main content */
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}

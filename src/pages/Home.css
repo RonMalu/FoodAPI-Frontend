@@ -1,0 +1,207 @@
+
+/* Use a soft background + minimal food-friendly tone */
+.home {
+  padding: 0;
+  background-color: #FAF3E0; /* warm minimal off-white */
+  font-family: "Baloo 2", sans-serif; /* bubble-style font */
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 32px 0;
+}
+
+.hero-title {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #2B2B2B; /* darker minimal tone */
+}
+
+.hero-title-accent {
+  color: #2B2B2B;
+  display: inline-block;
+  background-color: #FFF;
+  padding: 10px 18px;
+  border: 3px solid #000000;
+  border-radius: 16px; /* bubble shape */
+  box-shadow: 6px 6px 0 #000000;
+  transform: rotate(-1deg);
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  letter-spacing: 1px;
+  color: #5A5A5A; /* soft gray */
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 18px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  border-radius: 16px; /* rounded bubble buttons */
+  transition: all 0.1s ease;
+  background-color: #FFFFFF;
+  color: #000000;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+/* Minimal accent color (soft red) */
+.hero-btn-primary {
+  background-color: #E4583A; /* muted red-orange (food but minimal) */
+  color: #FFFFFF;
+}
+
+.hero-btn-primary:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #000000;
+}
+
+.hero-btn-secondary:hover {
+  background-color: #EDEDED;
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #000000;
+}
+
+/* ===========================
+   VISUAL GRID
+=========================== */
+.hero-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 32px;
+}
+
+.visual-block {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000000;
+  border-radius: 20px; /* bubble blocks */
+  box-shadow: 6px 6px 0 #000000;
+  transition: all 0.2s ease;
+}
+
+/* minimal neutral block tones */
+.block-1,
+.block-4 {
+  background-color: #FFF;
+}
+
+.block-2,
+.block-3 {
+  background-color: #F2E9D8; /* soft warm beige */
+}
+
+.visual-block:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 #000000;
+}
+
+.block-emoji {
+  font-size: 58px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 80px;
+}
+
+.feature-card {
+  padding: 40px 32px;
+  background-color: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 #000000;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 #000000;
+}
+
+/* minimal color variation */
+.feature-card:nth-child(1) {
+  background-color: #FFF;
+}
+
+.feature-card:nth-child(2) {
+  background-color: #F2E9D8;
+}
+
+.feature-card:nth-child(3) {
+  background-color: #FFFFFF;
+}
+
+.feature-icon {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+.feature-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  color: #2B2B2B;
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 968px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-block {
+    transform: none !important;
+  }
+}
